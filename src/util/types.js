@@ -3,7 +3,7 @@ import Input from '../inputs/Input';
 import DateInput from '../inputs/Date';
 import NumberInput from '../inputs/Number';
 import BoolInput from '../inputs/Bool';
-import SelectInput from '../inputs/Select';
+// import SelectInput from '../inputs/Select';
 
 let localDt = 'datetime-local'
 
@@ -34,14 +34,14 @@ types.date       =
   types.datetime =
   types[localDt] = DateInput
 
-types.array      =
-  types.listbox  = wrapWithDefaults(SelectInput, { multiple: true })
+// types.array      =
+//   types.listbox  = wrapWithDefaults(SelectInput, { multiple: true })
 
 types.bool       =
   types.boolean  = BoolInput
 
 types.textarea   = wrapWithDefaults(Input, { tagName: 'textarea' })
 
-types.select     = SelectInput
+// types.select     = SelectInput
 
 export default types
