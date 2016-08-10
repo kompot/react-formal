@@ -5,7 +5,7 @@ let React = require('react')
   , DateInput = require('../inputs/Date')
   , NumberInput = require('../inputs/Number')
   , BoolInput = require('../inputs/Bool')
-  , SelectInput = require('../inputs/Select')
+//   , SelectInput = require('../inputs/Select')
 
 let localDt = 'datetime-local'
 
@@ -29,14 +29,14 @@ types.date       =
   types.datetime =
   types[localDt] = DateInput
 
-types.array      =
-  types.listbox  = wrapWithDefaults(SelectInput, { multiple: true })
+// types.array      =
+//   types.listbox  = wrapWithDefaults(SelectInput, { multiple: true })
 
 types.bool       =
   types.boolean  = BoolInput
 
 types.textarea   = wrapWithDefaults(Input, { tagName: 'textarea' })
 
-types.select     = SelectInput
+// types.select     = SelectInput
 
 export default types
